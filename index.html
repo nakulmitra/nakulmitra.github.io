@@ -23,19 +23,6 @@
       background-image: none !important;
     }
 
-    .navbar {
-      background-color: rgba(0, 0, 0, 0.85);
-    }
-
-    .navbar-nav .nav-link {
-      color: #fce96a;
-      font-weight: 500;
-    }
-
-    .navbar-nav .nav-link:hover {
-      color: #fff4b8;
-    }
-
     .card {
       margin-bottom: 1.5rem;
       border-radius: 12px;
@@ -159,27 +146,33 @@
       background-color: #fff07d;
       transform: scale(1.1);
     }
+
+    #themeToggle {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 1000;
+      background-color: #222;
+      color: #fce96a;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+    }
   </style>
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Nakul Mitra</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1YUnpuyOaJHzD_a8vj5kW5Qc8fQ8bTQAU/view?usp=sharing" target="_blank">Resume</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <!-- Toggle Theme Button -->
+  <button id="themeToggle" onclick="toggleDarkMode()">
+    <i class="fas fa-adjust"></i>
+  </button>
 
   <div class="container py-5">
     <!-- Header -->
@@ -193,7 +186,6 @@
           target="_blank">LinkedIn</a>
         <a href="mailto:nakulmitra2114@gmail.com">Email</a>
         <a href="https://drive.google.com/file/d/1YUnpuyOaJHzD_a8vj5kW5Qc8fQ8bTQAU/view?usp=sharing" target="_blank">Resume</a>
-        <button class="btn btn-sm btn-outline-light ms-3" onclick="toggleDarkMode()">Toggle Theme</button>
       </div>
     </header>
 
