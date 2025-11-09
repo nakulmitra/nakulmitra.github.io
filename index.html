@@ -19,10 +19,107 @@
     }
 
     .dark-mode {
-      background-color: #121212 !important;
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)),
+        url('https://raw.githubusercontent.com/nakulmitra/nakulmitra.github.io/master/images/bg-image.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #e0e0e0;
-      background-image: none !important;
+      background-attachment: fixed;
+      transition: background 0.6s ease, color 0.6s ease;
     }
+
+    /* Card Styling - Graphite Glass */
+    .dark-mode .card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #f5f5f5;
+      box-shadow: 0 0 15px rgba(252, 233, 106, 0.05);
+    }
+
+    .dark-mode .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 25px rgba(252, 233, 106, 0.15);
+    }
+
+    /* Headings & Titles */
+    .dark-mode h1,
+    .dark-mode h2,
+    .dark-mode h3,
+    .dark-mode .card-title {
+      color: #fce96a;
+      text-shadow: 0 0 8px rgba(252, 233, 106, 0.2);
+    }
+
+    /* Navbar */
+    .dark-mode .navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .dark-mode .navbar-nav .nav-link {
+      color: #fce96a;
+      transition: color 0.3s ease;
+    }
+
+    .dark-mode .navbar-nav .nav-link:hover {
+      color: #fff7b2;
+    }
+
+    /* Social Icons */
+    .dark-mode .social-icons a {
+      background-color: rgba(255, 255, 255, 0.08);
+      color: #fce96a;
+      transition: all 0.3s ease;
+    }
+
+    .dark-mode .social-icons a:hover {
+      background-color: rgba(252, 233, 106, 0.2);
+      transform: scale(1.05);
+      box-shadow: 0 0 12px rgba(252, 233, 106, 0.25);
+    }
+
+    /* Scroll to Top Button */
+    .dark-mode #scrollTopBtn {
+      background-color: #fce96a;
+      color: #1c1f26;
+      box-shadow: 0 0 15px rgba(252, 233, 106, 0.3);
+    }
+
+    .dark-mode #scrollTopBtn:hover {
+      background-color: #fff27a;
+      transform: scale(1.1);
+    }
+
+    /* Theme Toggle Button */
+    .dark-mode #themeToggle {
+      background: #fce96a;
+      color: #1c1f26;
+      box-shadow: 0 0 15px rgba(252, 233, 106, 0.3);
+    }
+
+    .dark-mode #themeToggle:hover {
+      transform: rotate(15deg) scale(1.1);
+    }
+
+    /* Contact Row Links */
+    .dark-mode .contact-row a {
+      background-color: rgba(255, 255, 255, 0.07);
+      color: #fce96a;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .dark-mode .contact-row a:hover {
+      background-color: rgba(252, 233, 106, 0.15);
+      color: #fff7b2;
+    }
+
+    /* Smooth transition for all elements */
+    .dark-mode * {
+      transition: all 0.4s ease;
+    }
+
 
     .card {
       margin-bottom: 1.5rem;
